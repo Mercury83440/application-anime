@@ -5,11 +5,12 @@ Created on Sat May  7 18:18:21 2022
 @author: mathi
 """
 
-from tkinter import *
-from tkinter import ttk
+from tkinter import *  # TODO: remove wildcard import
+
+from tkinter import ttk  # TODO: remove unused import
 
 # Création de la fenêtre
-fenetre = Tk()
+fenetre = Tk()  # TODO : use english variable names
 fenetre.geometry("250x100")
 fenetre.title("Page d'accueil")
 
@@ -20,7 +21,7 @@ Label(text="mots de passe :").grid(row=1)
 Entry().grid(row=1, column=1)
 
 radioValue = IntVar()
-Radiobutton(text="User",  variable=radioValue, value=0).grid(row=2)
+Radiobutton(text="User", variable=radioValue, value=0).grid(row=2)
 Radiobutton(text="Admin", variable=radioValue, value=1).grid(row=2, column=1)
 
 Button(text="Valider").grid(row=3, column=0)
